@@ -29,7 +29,7 @@ const Header = () => {
   };
   return (
     <>
-      <header className="border-b border-stroke">
+      <header className="border-b border-stroke fixed w-full backdrop-blur-md top-0 left-0">
         <nav className="main h-[80px] flex items-center justify-between ">
           <Brand />
 

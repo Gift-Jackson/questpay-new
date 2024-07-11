@@ -4,7 +4,7 @@ import CTA from "./CTA";
 const Hero = () => {
   return (
     <>
-      <div className="mt-[3em] md:mt-0 md:min-h-[450px] flex items-center justify-center">
+      <div className="pt-[120px] md:mt-0 md:min-h-[450px] flex items-center justify-center">
         <div className="layout text-center">
           <span className="text-sm text-subtext bg-mediumbg px-4 py-2 rounded-full">
             Bill payment made easy 🎉
