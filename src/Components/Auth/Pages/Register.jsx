@@ -47,7 +47,7 @@ const Register = () => {
             placeholder="> 5 characters"
             required="true"
           />
-          <button type="submit" className="bg-primary h-[42px] rounded-xl mt-8">Submit</button>
+          <button type="submit" className="bg-primary h-[42px] text-white rounded-xl mt-8">Submit</button>
         </form>
 
         <p className="my-[1.5em] text-center text-sm text-subtext">- Or -</p>

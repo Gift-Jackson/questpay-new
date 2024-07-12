@@ -3,6 +3,7 @@ import Brand from "../../Global/Brand";
 import Theme from "../../Global/Theme";
 import { useState } from "react";
 import MobileNav from "./MobileNav";
+import { AnimatePresence } from "framer-motion";
 
 const links = [
   {
@@ -56,7 +57,7 @@ const Header = () => {
                 onClick={toggleThemeMenu}
                 className="outline h-[45px] w-[45px] flex items-center justify-center bg-secondary rounded-xl border-stroke border "
               >
-                <span className="material-symbols-outlined text-primary">
+                <span className="material-symbols-outlined text-subtext">
                   colors
                 </span>
               </button>
@@ -82,9 +83,14 @@ const Header = () => {
           </div>
         </nav>
       </header>
-      {openTheme && <Theme toggleThemeMenu={toggleThemeMenu} />}
+      <AnimatePresence>
+        {openTheme && <Theme toggleThemeMenu={toggleThemeMenu} />}
+      </AnimatePresence>
+
       <div className="md:hidden">
-        {openMenu && <MobileNav links={links} toggleMenu={toggleMenu} />}
+        <AnimatePresence>
+          {openMenu && <MobileNav links={links} toggleMenu={toggleMenu} />}
+        </AnimatePresence>
       </div>
     </>
   );

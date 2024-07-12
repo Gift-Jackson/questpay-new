@@ -20,6 +20,7 @@ const Theme = ({ toggleThemeMenu }) => {
 
   const closeModal = () => {
     toggleThemeMenu();
+    toggleDarkMode();
   };
 
   return (
@@ -27,7 +28,7 @@ const Theme = ({ toggleThemeMenu }) => {
       <div className="w-full mt-4">
         <div
           className="flex bg-secondary gap-1 h-10 p-[.2em] rounded-xl "
-          onClick={toggleDarkMode}
+          onClick={closeModal}
         >
           <button
             className={`flex-1 text-primary rounded-lg flex items-center justify-center gap-2 ${
@@ -50,7 +51,7 @@ const Theme = ({ toggleThemeMenu }) => {
             <span className="text-inherit text-sm font-medium">Dark</span>
           </button>
         </div>
-        <div className="color-grid mt-6">
+        <div className="color-grid border-[1px] border-stroke p-4 rounded-xl mt-6">
           {colors.map((color) => (
             <div
               key={color}

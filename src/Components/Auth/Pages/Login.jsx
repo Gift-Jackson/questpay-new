@@ -32,7 +32,7 @@ const Login = () => {
             required="true"
           />
           <p className="my-4"><Link className="text-primary text-sm">forgotten password?</Link></p>
-          <button type="submit" className="bg-primary h-[42px] rounded-xl">Submit</button>
+          <button type="submit" className="bg-primary text-white h-[42px] rounded-xl">Submit</button>
         </form>
 
         <p className="my-[1.5em] text-center text-sm text-subtext">- Or -</p>
